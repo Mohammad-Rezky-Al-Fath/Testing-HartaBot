@@ -11,7 +11,7 @@
     *   Bot merespons input perintah dasar tanpa hambatan atau *crash*.
     *   Menu navigasi muncul dalam bentuk tombol interaktif yang bisa diklik pengguna (bukan sekadar teks biasa).
 *   **Evidence:** Screenshot percakapan yang menampilkan balasan sapaan dan tombol navigasi bot.
-
+![Bukti TC 001](../04_Execution_Evidence/TC-BOT-001_Evidence.jpeg)
 
 ## Fitur 2: Validasi Input Angka Penuh (TC-BOT-002) - *Identifikasi Bug*
 **Requirement:** Sistem dapat membaca input nominal transaksi berupa angka penuh tanpa format tambahan.
@@ -22,7 +22,7 @@
     *   Sistem mengenali deretan angka standar sebagai nominal uang valid tanpa mewajibkan titik pemisah ribuan (misal: 30.000).
     *   Sistem tidak menolak pencatatan jika tidak ada singkatan huruf di belakang nominal.
 *   **Evidence:** Screenshot balasan bot (Catatan bug saat ini: Bot gagal memproses angka 30000 dan mengeluarkan pesan error gagal membaca nominal).
-
+![Bukti TC 002](../04_Execution_Evidence/TC-BOT-002_Evidence.jpeg)
 
 ## Fitur 3: Validasi Input Singkatan Angka (TC-BOT-003)
 **Requirement:** Sistem mampu mengonversi singkatan uang kasual yang lazim digunakan di Indonesia.
@@ -35,7 +35,7 @@
     *   Fungsi *parsing* (pemecahan teks) bot berhasil mendeteksi *string* "rb" dan "jt".
     *   Angka konversi yang dicatat ke laporan akhir memiliki jumlah nol (0) yang benar.
 *   **Evidence:** Screenshot laporan bot yang memuat rincian nominal yang sudah dikonversi dengan tepat.
-
+![Bukti TC 003](../04_Execution_Evidence/TC-BOT-003_Evidence.jpeg.jpeg)
 
 ## Fitur 4: Akurasi Kategorisasi Pengeluaran (TC-BOT-004) - *Identifikasi Bug*
 **Requirement:** Sistem mampu mendeteksi kata kunci barang dan memberikan kategori pengeluaran yang masuk akal.
@@ -45,7 +45,7 @@
 *   **Acceptance Criteria:**
     *   Label kategori tidak menyimpang jauh dari jenis barang yang diinputkan.
 *   **Evidence:** Screenshot balasan verifikasi bot (Catatan bug saat ini: Sistem salah mengategorikan Minyak Motor ke dalam kategori "Makanan & Minuman").
-
+![Bukti TC 004](../04_Execution_Evidence/TC-BOT-003_Evidence.jpeg.jpeg)
 
 ## Fitur 5: Pemrosesan Transaksi Multi-Item (TC-BOT-005) - *Identifikasi Bug*
 **Requirement:** Pengguna dapat mencatat beberapa barang belanja sekaligus dalam satu kali kirim pesan (bulk input).
@@ -56,3 +56,4 @@
     *   Bot mampu melakukan pemisahan data (*data splitting*) jika ada lebih dari satu barang dalam satu *chat bubble*.
     *   Total saldo akhir terpotong sesuai akumulasi dari seluruh item yang dimasukkan.
 *   **Evidence:** Screenshot rekap catatan bot (Catatan bug saat ini: Bot gagal mendeteksi baris-baris rincian barang, dan hanya mendeteksi satu aktivitas pengeluaran).
+![Bukti TC 005](../04_Execution_Evidence/TC-BOT-005_Evidence.jpeg)
