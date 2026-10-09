@@ -35,7 +35,7 @@
     *   Fungsi *parsing* (pemecahan teks) bot berhasil mendeteksi *string* "rb" dan "jt".
     *   Angka konversi yang dicatat ke laporan akhir memiliki jumlah nol (0) yang benar.
 *   **Evidence:** Screenshot laporan bot yang memuat rincian nominal yang sudah dikonversi dengan tepat.
-![Bukti TC 003](../04_Execution_Evidence/TC-BOT-003_Evidence.jpeg.jpeg)
+![Bukti TC 003](../04_Execution_Evidence/TC-BOT-003_Evidence.jpeg)
 
 ## Fitur 4: Akurasi Kategorisasi Pengeluaran (TC-BOT-004) - *Identifikasi Bug*
 **Requirement:** Sistem mampu mendeteksi kata kunci barang dan memberikan kategori pengeluaran yang masuk akal.
@@ -45,7 +45,7 @@
 *   **Acceptance Criteria:**
     *   Label kategori tidak menyimpang jauh dari jenis barang yang diinputkan.
 *   **Evidence:** Screenshot balasan verifikasi bot (Catatan bug saat ini: Sistem salah mengategorikan Minyak Motor ke dalam kategori "Makanan & Minuman").
-![Bukti TC 004](../04_Execution_Evidence/TC-BOT-003_Evidence.jpeg.jpeg)
+![Bukti TC 004](../04_Execution_Evidence/TC-BOT-003_Evidence.jpeg)
 
 ## Fitur 5: Pemrosesan Transaksi Multi-Item (TC-BOT-005) - *Identifikasi Bug*
 **Requirement:** Pengguna dapat mencatat beberapa barang belanja sekaligus dalam satu kali kirim pesan (bulk input).
